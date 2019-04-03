@@ -1,0 +1,29 @@
+
+POSIX directory stuff for Cset/2
+
+by Joe DeRosa 3/22/93 (1:141/42@fidonet.org)
+
+released in the public domain
+
+if you use this code you accept ALL responsibility for anything that
+happens.
+
+These 6 routines are available on several compilers that I have used,
+including several unix compilers and a couple of DOS compilers so I
+decided to port them to OS/2 here they are.
+
+They are free, but if you wish to throw money, thankyous, bugs
+Joe DeRosa
+Box 93
+Milford CT 06460
+
+complaints > /dev/nul
+
+DIR	      *opendir (char  *dname);
+struct dirent *readdir (DIR  *dir);
+int	      closedir (DIR  *dir);
+void	      rewinddir(DIR  *dir);
+long	      telldir(DIR *dir);
+void	      seekdir(DIR *dir,long loc);
+
+For documentation see the source I don't feel like writing any.

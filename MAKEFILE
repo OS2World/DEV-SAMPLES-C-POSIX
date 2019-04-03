@@ -1,0 +1,5 @@
+posixdir.exe:
+             icc -DTEST -I. posixdir.c
+
+posixdir.obj:
+             icc -c -I. posixdir.c
